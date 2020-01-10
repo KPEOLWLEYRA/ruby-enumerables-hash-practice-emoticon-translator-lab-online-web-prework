@@ -26,7 +26,7 @@ def get_japanese_emoticon(library, english_emote)
   library[:get_emoticon].each do |key, value|
     if english_emote == key
       puts value
-      value
+      return value
     end
   end
 end
