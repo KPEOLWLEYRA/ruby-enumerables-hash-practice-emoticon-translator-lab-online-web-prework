@@ -25,7 +25,7 @@ def get_japanese_emoticon(library, english_emote)
   library = load_library("./lib/emoticons.yml")
   library[:get_emoticon].each do |key, value|
     if english_emote == key
-      puts value
+      puts value[key]
     end
   end
 end
