@@ -29,7 +29,7 @@ def get_japanese_emoticon(library, english_emote)
       return value
     end
   end
-  puts "Sorry, that emoticon was not found"
+  returns "Sorry, that emoticon was not found"
 end
   
   
