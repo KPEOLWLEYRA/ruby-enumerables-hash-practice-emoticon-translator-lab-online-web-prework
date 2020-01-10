@@ -28,7 +28,6 @@ def get_japanese_emoticon(library, english_emote)
       puts value
     end
   end
-  value
 end
   
   
