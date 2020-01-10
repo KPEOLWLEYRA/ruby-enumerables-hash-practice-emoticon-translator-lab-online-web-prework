@@ -22,7 +22,7 @@ end
 load_library("./lib/emoticons.yml")
 
 def get_japanese_emoticon(library, english_emote)
-  library = load_library(library)
+  library = load_library("../lib/translator.rb")
   library[:get_emoticon].each do |key, value|
     if english_emote == key
       puts value
@@ -32,7 +32,7 @@ def get_japanese_emoticon(library, english_emote)
 end
   
   
-end
+
 get_japanese_emoticon("./lib/emoticons.yml", ":)")
 
 def get_english_meaning
