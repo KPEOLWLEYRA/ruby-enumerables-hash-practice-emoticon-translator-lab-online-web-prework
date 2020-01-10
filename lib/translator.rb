@@ -21,8 +21,8 @@ end
 
 load_library("./lib/emoticons.yml")
 
-def get_japanese_emoticon(library, english_emote)
-  library = load_library("./lib/emoticons.yml")
+def get_japanese_emoticon(filepath, english_emote)
+  library = load_library(filepath)
   library[:get_emoticon].each do |key, value|
     if english_emote == key
       puts value
