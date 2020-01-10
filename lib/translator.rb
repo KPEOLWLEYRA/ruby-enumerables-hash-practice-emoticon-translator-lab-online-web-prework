@@ -24,6 +24,7 @@ load_library("./lib/emoticons.yml")
 def get_japanese_emoticon(library, english_emote)
   library = load_library("./lib/emoticons.yml")
   library[:get_emoticon].each do |key, value|
+    puts " key is #{key} value is #{value}"
     if english_emote == key
       puts value[key]
     end
